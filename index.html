@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webmasters small projects</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <h1>CSS Code Beautifier</h1>
+    <div id="filter">
+      <label for="class">Class:</label>
+      <input type="text" id="class" placeholder="Enter class name">
+      <label for="id">ID:</label>
+      <input type="text" id="id" placeholder="Enter ID">
+      <label for="element">Element:</label>
+      <input type="text" id="element" placeholder="Enter HTML element">
+      <label for="property">Property:</label>
+      <input type="text" id="property" placeholder="Enter property">
+      <label for="value">Value:</label>
+      <input type="text" id="value" placeholder="Enter value">
+      <button id="filter-btn" onclick="filterCSS()">Filter</button>
+      <button id="reset-filter-btn" onclick="resetFilter()">Reset Filter</button>
+    </div>
+    <div id="container">
+      <div id="input-container">
+        <textarea id="input" placeholder="Paste your CSS code here"></textarea>
+        <button id="reset-text-btn" onclick="resetTextAreas()">Reset Text</button>
+      </div>
+      <div id="action-buttons">
+        <button id="beautify-btn" onclick="beautifyCSS()">Beautify</button>
+        <button id="minify-btn" onclick="minifyCSS()">Minify</button>
+        <button id="swap-btn" onclick="swapCode()">Swap</button>
+      </div>
+      <div id="output-container">
+        <textarea id="output" placeholder="Result" readonly></textarea>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/cssmin/cssmin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-beautify/js/lib/beautify-css.js"></script>
+<script src="script.js"></script>    
+</body>
+</html>

@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #filter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  input[type="text"],
+  textarea {
+    margin-right: 10px;
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    background-color: #337ab7;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #286090;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background-color: #f4f4f4;
+    padding: 10px;
+  }
+  
+  #beautify-btn,
+  #minify-btn,
+  #reset-text-btn {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #input-container,
+  #output-container {
+    flex-basis: 45%;
+  }
+  
+  #action-buttons {
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #copy-btn {
+    padding: 8px 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    background-color: #5cb85c;
+    cursor: pointer;
+  }
+  
+  #copy-btn:hover {
+    background-color: #449d44;
+  }
+  
